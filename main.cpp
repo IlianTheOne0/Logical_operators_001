@@ -182,8 +182,17 @@ int main() {
                     std::cin >> numbers[5];
                     std::cout << "Enter the seventh number: ";
                     std::cin >> numbers[6];
+                    
+                    int max_value = numbers[0];
 
-                    cout << "Maximum number out of seven: " << max(numbers[0], numbers[6]) << endl;
+                    for (int i = 1; i < 7; i++) {
+                        cout << numbers[i] << " " << max_value << endl;
+                        if (numbers[i] > max_value) {
+                            max_value = numbers[i];
+                        }
+                    }
+
+                    cout << "Maximum number out of seven: " << max_value << endl;
                 } break;
 
                 case 4:
