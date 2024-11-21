@@ -186,7 +186,6 @@ int main() {
                     int max_value = numbers[0];
 
                     for (int i = 1; i < 7; i++) {
-                        cout << numbers[i] << " " << max_value << endl;
                         if (numbers[i] > max_value) {
                             max_value = numbers[i];
                         }
